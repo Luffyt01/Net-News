@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        style="@style/BACKGROUND"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        tools:context=".authentication.LoginActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello"
+            android:id="@+id/login_heading"
+            android:textSize="42sp"
+            style="@style/MAIN_TEXT"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            />
+
+        <TextView
+            android:id="@+id/tvAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/again"
+            android:textColor="@color/theme_color"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+            android:id="@+id/tvWelcomeBackMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_back_you_ve_been_missed"
+            style="@style/SUB_TEXT"
+            android:textSize="16sp"
+            android:layout_marginBottom="40dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email_layout"
+            android:layout_marginBottom="20dp"
+            style="@style/MAIN_TEXT">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_your_email"
+                android:inputType="textEmailAddress"
+                style="@style/MAIN_TEXT"
+                android:id="@+id/input_email"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_layout"
+            app:endIconMode="password_toggle"
+            style="@style/MAIN_TEXT">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_your_password"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:id="@+id/input_password"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:text="@string/forget_password"
+            android:textColor="@color/theme_color" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/BUTTON"
+            app:backgroundTint="@null"
+            android:text="@string/login"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:id="@+id/login_button"/>
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:id="@+id/registerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/don_t_have_an_account"
+                style="@style/SUB_TEXT"
+                android:layout_marginEnd="3dp"/>
+
+            <TextView
+                android:id="@+id/goToRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register"
+                android:textColor="#0288D1"/>
+        </GridLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or_login_with"
+                style="@style/SUB_TEXT"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/or_login_text"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="15dp"
+                app:strokeWidth="1dp"
+                style="@style/BUTTON"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="@string/google_icon"
+                        android:src="@drawable/googgle_icon"
+                        android:layout_gravity="end" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/login_with_google"
+                        android:layout_marginStart="10dp"
+                        android:textSize="14sp"
+                        style="@style/MAIN_TEXT"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</layout>

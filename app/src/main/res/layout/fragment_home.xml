@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/BACKGROUND"
+        tools:context=".ui.home.HomeFragment">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/home_layout"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                style="@style/BACKGROUND"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/topHeadLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/BACKGROUND"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/top_headlines"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="8dp"
+                        style="@style/MAIN_TEXT"
+                        android:textStyle="bold"
+                        android:id="@+id/top_headlines_title"
+                        android:textSize="18sp"/>
+                    <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+                        android:id="@+id/carousel"
+                        app:showBottomShadow="false"
+                        app:showTopShadow="false"
+                        app:showIndicator="false"
+                        app:showNavigationButtons="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="256dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/latest"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="8dp"
+                    style="@style/MAIN_TEXT"
+                    android:textStyle="bold"
+                    android:id="@+id/latest_title"
+                    android:textSize="18sp"/>
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.tabs.TabLayout
+                        style="@style/TAB_COLOR"
+                        android:id="@+id/categoryTab"
+                        app:tabGravity="center"
+                        app:tabMode="fixed"
+                        app:tabMaxWidth="200dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp" />
+
+                </HorizontalScrollView>
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewPager2"
+                    style="@style/BACKGROUND"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                style="@style/PROGRESS"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.483" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+</layout>

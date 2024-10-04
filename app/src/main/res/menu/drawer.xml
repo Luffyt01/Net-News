@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:title="Home"
+            android:iconTint="@android:color/transparent"
+            android:icon="@drawable/home_checked"/>
+        <item
+            android:id="@+id/local"
+            android:title="Local"
+            android:iconTint="@android:color/transparent"
+            android:icon="@drawable/local_checked"/>
+        <item
+            android:id="@+id/bookmark"
+            android:title="Bookmark"
+            android:iconTint="@android:color/transparent"
+            android:icon="@drawable/bookmark_checked"/>
+        <item
+            android:id="@+id/settings"
+            android:title="Settings"
+            android:iconTint="@android:color/transparent"
+            android:icon="@drawable/setting_checked"/>
+        <item
+            android:id="@+id/logout"
+            android:title="Logout"
+            android:iconTint="@android:color/transparent"
+            android:icon="@drawable/logout"/>
+    </group>
+    <item
+        android:title="Categories">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/all"
+                    android:title="All"/>
+                <item
+                    android:id="@+id/world"
+                    android:title="World"/>
+                <item
+                    android:id="@+id/business"
+                    android:title="Business"/>
+                <item
+                    android:id="@+id/technology"
+                    android:title="Technology"/>
+                <item
+                    android:id="@+id/entertain"
+                    android:title="Entertainment"/>
+                <item
+                    android:id="@+id/sports"
+                    android:title="Sports"/>
+                <item
+                    android:id="@+id/science"
+                    android:title="Science"/>
+                <item
+                    android:id="@+id/health"
+                    android:title="Health"/>
+
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

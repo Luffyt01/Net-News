@@ -1,0 +1,72 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NetNews" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+
+    <style name="BACKGROUND">
+        <item name="android:background">#000</item>
+    </style>
+
+    <style name="ThemeOverlay.SearchView" parent="">
+        <item name="android:editTextColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+    <style name="MAIN_TEXT">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textColorHint">#FFF</item>
+        <item name="hintTextColor">#FFF</item>
+        <item name="startIconTint">#FFF</item>
+        <item name="endIconTint">#FFF</item>
+        <item name="android:editTextColor">@color/white</item>
+    </style>
+
+    <style name="SUB_TEXT">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="BUTTON">
+        <item name="cardBackgroundColor">#000</item>
+        <item name="android:background">@drawable/btn_bg</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:strokeColor">#979595</item>
+    </style>
+
+    <style name="PROGRESS">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateTintMode">src_atop</item>
+        <item name="android:indeterminateTint">@color/white</item>
+    </style>
+
+    <style name="TAB_COLOR">
+        <item name="tabTextColor">@drawable/color_selector_dark</item>
+        <item name="android:background">#000</item>
+    </style>
+
+    <style name="SEARCH_ICON">
+        <item name="android:searchIcon">@drawable/search_light</item>
+    </style>
+
+    <style name="SHARE_ICON">
+        <item name="android:src">@drawable/share_light</item>
+    </style>
+
+    <style name="BOOKMARK_ICON">
+        <item name="android:background">@drawable/bookmark_dark_selector</item>
+    </style>
+
+    <style name="Toolbar_bookmark">
+        <item name="android:background">@drawable/bookmark_light_filled</item>
+    </style>
+
+    <style name="Settings_icon">
+        <item name="android:background">@drawable/settings_light_filled</item>
+    </style>
+
+    <style name="history_icon">
+        <item name="android:background">@drawable/history_light</item>
+    </style>
+
+</resources>
