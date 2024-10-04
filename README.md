@@ -26,13 +26,4 @@ Key Features:
     A "Bookmark" section allows them to view all their saved articles in one place.
     Bookmarks are stored locally on the device using a persistent storage solution like Room Database or Firebase (in case cloud syncing is needed).
   
-** User Interface **
 
-  The app offers a clean and intuitive UI, featuring a homepage with the latest trending articles and a search bar at the top.
-  News categories (like World, Business, Sports) are available for users to explore via tabs or a ViewPager.
-  A bottom navigation bar allows easy access to key features like Home, Search, History, and Bookmarks.
-
-** User Authentication (Optional) **
-  If Firebase authentication is used, users can create accounts to save their bookmarks and history to the cloud.
-  This enables multi-device support and personalized news feeds.
-  The app, through its news retrieval system and personalization features like search, history, and bookmarks, provides a comprehensive and user-friendly way for users to stay updated with the latest news articles.
